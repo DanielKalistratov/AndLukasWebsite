@@ -1,0 +1,37 @@
+body {
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"head head head head"
+                        "nav main main main"
+                        "aside main main main"
+                        "foot foot foot foot";
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+header {
+    grid-area: head;
+    background-color: yellow;
+}
+
+nav {
+    grid-area: nav;
+    background-color: red;
+}
+
+main {
+    grid-area: main;
+    background-color: green;
+}
+
+aside { 
+    grid-area: aside;
+    background-color: aqua;
+}
+
+footer {
+    grid-area: foot;
+    background-color: blue;
+}
