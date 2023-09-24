@@ -15,10 +15,12 @@
         <p>{{content}}</p>
     </div>    -->
     <header class="navbar" id="nav">
-        <h1 class="title">{{NavTitle}}
-            <a href="Home.html">{{NavItem}}</a>
-        </h1>
-    
+        <ul>
+        <a href="index.html" class="navtitle">Hallo</a>
+        <li v-for="link in links">
+            <a href="Home.html" class="navitem">{{ link }}</a>
+        </li>
+        </ul>
     </header>
     <nav>
        
