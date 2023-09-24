@@ -4,7 +4,7 @@ Vue.createApp({
             pageTitle: 'Hello Vue',
             content: 'tSCHÜSS',
             NavTitle: 'Hallo',
-            NavItem: 'hallo2'
+            NavItem: 'halleeo2'
         };
     }
 }).mount('#nav');
