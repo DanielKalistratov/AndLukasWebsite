@@ -1,21 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+:root{
+    --body-color: #E4E9F7;
+    --navbar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDDD;
+    --text-color: #6e6e6e;
+}
+
 body {
-    background-color: brown;
+    background-color: var(--body-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:"head head head head"
                         "nav main main main"
                         "aside main main main"
                         "foot foot foot foot";
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
+    margin: 0;
 }
-/***
+
+
 header {
     grid-area: head;
-    background-color: yellow;
+    height: 70px;
+    text-align: center;
 }
+
+.navbar {
+    background-color: var(--navbar-color);
+}
+
+.title {
+    margin: 0;
+    margin-top: 10.5px;
+}
+
+
+
+
 
 nav {
     grid-area: nav;
@@ -24,7 +51,7 @@ nav {
 
 main {
     grid-area: main;
-    background-color: green;
+    background-color: var();
 }
 
 aside { 
